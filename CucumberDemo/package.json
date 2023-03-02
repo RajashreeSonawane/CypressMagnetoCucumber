@@ -1,0 +1,33 @@
+{
+  "name": "cucumberdemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions 1": "cypress/e2e/Login/**/*.{js,ts}",
+    "stepDefinitions 2": "cypress/e2e/Fileupload/**/*.{js,ts}",
+    "stepDefinitions 3 ": "cypress/e2e/Filedownload/**/*.{js,ts}",
+    "stepDefinitions 4": "cypress/e2e/Registerlogin/**/*.{js,ts}"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^15.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "@esbuild-plugins/node-modules-polyfill": "^0.1.4",
+    "cypress": "^10.9.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-xpath": "^2.0.1",
+    "node-xlsx": "^0.21.0"
+  },
+  "dependencies": {
+    "cypress-real-events": "^1.7.6",
+    "esbuild": "^0.16.4",
+    "jsonpath": "^1.1.1"
+  }
+}
